@@ -1,0 +1,1 @@
+web: gunicorn hori_p.wsgi --log-file -
