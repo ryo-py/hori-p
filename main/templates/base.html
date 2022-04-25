@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Photosen &mdash; Colorlib Website Template</title>
+    <title>CRAZY KEHN &mdash;</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -54,7 +54,9 @@
           <div class="row align-items-center">
             <div class="col-6 col-xl-2" data-aos="fade-down">
               <h1 class="mb-0">
-                <a href="{% url 'index' %}" class="text-white h2 mb-0">KENZO</a>
+                <a href="{% url 'index' %}" class="text-white h2 mb-0"
+                  >CRAZY KEHN</a
+                >
               </h1>
             </div>
             <div class="col-10 col-md-8 d-none d-xl-block" data-aos="fade-down">
@@ -65,15 +67,12 @@
                 <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                   <li class="active"><a href="{% url 'index' %}">Home</a></li>
                   <li class="has-children">
-                    <a href="{% url 'illustration' %}">Gallery</a>
+                    <a href="{% url 'illustration' %}">Portfolio</a>
                     <ul class="dropdown">
-                      <li><a href="#">Nature</a></li>
-                      <li><a href="#">Portrait</a></li>
-                      <li><a href="#">People</a></li>
-                      <li><a href="#">Architecture</a></li>
-                      <li><a href="#">Animals</a></li>
-                      <li><a href="#">Sports</a></li>
-                      <li><a href="#">Travel</a></li>
+                      <li>
+                        <a href="{% url 'illustration' %}">Illustration</a>
+                      </li>
+                      {% comment %}
                       <li class="has-children">
                         <a href="#">Sub Menu</a>
                         <ul class="dropdown">
@@ -82,6 +81,7 @@
                           <li><a href="#">Menu Three</a></li>
                         </ul>
                       </li>
+                      {% endcomment %}
                     </ul>
                   </li>
                   <li><a href="{% url 'service' %}">Services</a></li>
