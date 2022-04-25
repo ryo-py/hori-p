@@ -5,13 +5,17 @@ def index(request):
     return render(request, "index.html")
 
 # contact us
-def contacts(request):
+def contact(request):
     return render(request, "contact.html")
 
 # about
-def company(request):
+def about(request):
     return render(request, "about.html")
 
+# service
+def service(request):
+    return render(request, "service.html")
+
 # illustration
-def company(request):
-    return render(request, "illustration_gallary.html")
+def illustration_gallary(request):
+    return render(request, "illustration.html")
