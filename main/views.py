@@ -19,3 +19,12 @@ def service(request):
 # illustration
 def illustration_gallary(request):
     return render(request, "illustration.html")
+
+
+# 3d animation test
+def test(request):
+    return render(request, "test.html")
+
+# scroll video test
+def scroll_video(request):
+    return render(request, "scroll_video.html")

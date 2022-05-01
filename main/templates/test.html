@@ -1,0 +1,34 @@
+{% extends 'base.html' %}{% load static %} {% block content %}
+<div>
+  <video id="vid" src="{% static 'video/test.mp4' %}"></video>
+</div>
+
+<script>
+  const element = document.getElementById("vid");
+  let start, previousTimeStamp;
+  let done = false;
+
+  function step(timestamp) {
+    if (start === undefined) {
+      start = timestamp;
+    }
+    const elapsed = timestamp - start;
+
+    if (previousTimeStamp !== timestamp) {
+      // ここで Math.min() を使用して、要素がちょうど 200px で止まるようにします。
+      const count = Math.min(0.1 * elapsed, 200);
+      element.style.transform = "translateX(" + count + "px)";
+      if (count === 200) done = true;
+    }
+
+    if (elapsed < 2000) {
+      // Stop the animation after 2 seconds
+      previousTimeStamp = timestamp;
+      !done && window.requestAnimationFrame(step);
+    }
+  }
+
+  window.requestAnimationFrame(step);
+</script>
+
+{% endblock content %}

@@ -1,42 +1,6 @@
-{% extends 'base.html' %} {% load static %} {% block content %} {% comment %}
-<link
-  href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap"
-  rel="stylesheet"
-/>
-<link rel="stylesheet" href="fonts/icomoon/style.css" />
-
-<link rel="stylesheet" href="css/bootstrap.min.css" />
-<link rel="stylesheet" href="css/magnific-popup.css" />
-<link rel="stylesheet" href="css/jquery-ui.css" />
-<link rel="stylesheet" href="css/owl.carousel.min.css" />
-<link rel="stylesheet" href="css/owl.theme.default.min.css" />
-
-<link rel="stylesheet" href="css/lightgallery.min.css" />
-
-<link rel="stylesheet" href="css/bootstrap-datepicker.css" />
-
-<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
-
-<link rel="stylesheet" href="css/swiper.css" />
-
-<link rel="stylesheet" href="css/aos.css" />
-
-<link rel="stylesheet" href="css/style.css" /> {% endcomment %}
-
+{% extends 'base.html' %} {% load static %} {% block content %} 
 <div class="site-section" data-aos="fade">
   <div class="container-fluid">
-    {% comment %}
-    <div class="row justify-content-center">
-      <div class="col-md-7">
-        <div class="row mb-5">
-          <div class="col-12">
-            <h2 class="site-section-heading text-center">My Services</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    {% endcomment %}
-
     <div class="row mb-5">
       <div class="col-md-7">
         <img
@@ -45,102 +9,78 @@
           class="img-fluid"
         />
       </div>
-      <div class="col-md-4 ml-auto">
+      <div class="col-md-4">
         <h3 class="text-white">CRAZY KEHN</h3>
         <p>
-          経歴 - Background
+          ■技術 - Skills 
           <ul>
             <li></li>
             <li></li>
             <li></li>
           </ul>
-          技術 - Skills
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul> 
-          関心 - Interests         
+          <br>
+          ■関心 - Interests         
           <ul>
             <li></li>
             <li></li>
             <li></li>
           </ul>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus vel
-          tenetur explicabo necessitatibus, ad soluta consectetur illo qui
-          voluptatem. Quis soluta maiores eum. Iste modi voluptatum in
-          repudiandae fugiat suscipit dolorum harum, porro voluptate quis? Alias
-          repudiandae dicta doloremque voluptates soluta repellendus, unde
-          laborum quo nam, ullam facere voluptatem similique.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
-          architecto excepturi aliquid minus nostrum dicta labore iusto
-          obcaecati fugit cupiditate.
+          <br>
+          ■経歴 - Background
+          <br>
+
+          幼いころに母の友人の美術教師に賞賛されたことをきっかけにイラストレーターを志す。
+          小学２年生から裏紙にドラゴンの絵を描き続け、テスト裏に落書きでイラストを再開
+          黒板に担任の先生の顔をしたキャラクターやムキムキな豚の「豚汁子」を作成し、学生時代から
+          イラストレーションを通し学校行事から遊びをサポート。
+          <br>
+          <br>
+          <ul>
+            <li>鉛筆画「ドラゴン」 - 2000/06</li>
+            <li>「電動スケボー・改」電動キックボードを改造して作成 - 2004/12</li>
+            <li>「手作りハンモック」を友人と制作 - 2005/11</li>
+            <li>鉛筆画「ドラゴン」 - 2000/06</li>
+            <li>「電動スケボー・改」電動キックボードを改造して作成 - 2004/12</li>
+            <li>「手作りハンモック」を友人と制作 - 2005/11</li>
+            <li>鉛筆画「ドラゴン」 - 2000/06</li>
+
+          </ul>
+          {% comment %} <div id="timeline-content">
+            <h1>Timeline</h1>
+          
+            <ul class="timeline">
+              <li class="event" data-date="65Million B.C.">
+                <h3>Dinosaurs Roamed the Earth</h3>
+                <p>RAWWWWWWRRR 🐢🦂</p>
+              </li>
+              <li class="event" data-date="2005">
+                <h3>Creative Component Launched</h3>
+                <p>"We can be all things to all people!" 📣</p>    
+              </li>
+              <li class="event" id="date" data-date="2009">
+                <h3>Squareflair was Born</h3>
+                <p></p> <p>"We can be all things to Squarespace users!" 📣</p>    
+              </li>
+              
+              <li class="event" data-date="2021">
+                
+                <h3>Squareflair Today</h3>
+                
+                <p>"We design and build from scratch!" 📣<p/> <p>When we say <em><strong>100% custom</strong></em> we mean it— and we build all sites on the Squarespace Developer platform.<p/>
+          <p>Did you know that all of our pixels are hand-forged from the rarest of subpixels grown and harvested in the <em>Nerd Forest</em>? <br>🤜💥🤛</p>
+                
+                <p><strong>Our success can be measured by lives and brands enhanced by 9+ years of 100% Squarespace-focused service!</strong></p>
+                
+          <p><a href="https://www.squareflair.com">squareflair.com</a></p>
+              </li>
+            </ul>
+          </div> {% endcomment %}
         </p>
       </div>
     </div>
+    <div class="row">
 
-    <div class="row site-section">
-      <div class="col-md-6 col-lg-6 col-xl-4 text-center mb-5">
-        <img
-          src="{% static 'images/person_1.jpg' %}"
-          alt="Image"
-          class="img-fluid w-50 rounded-circle mb-4"
-        />
-        <h2 class="text-black font-weight-light mb-4">Jean Smith</h2>
-        <p class="mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab
-          quas facilis obcaecati non ea, est odit repellat distinctio incidunt,
-          quia aliquam eveniet quod deleniti impedit sapiente atque tenetur
-          porro?
-        </p>
-        <p>
-          <a href="#" class="pl-0 pr-3"><span class="icon-twitter"></span></a>
-          <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-          <a href="#" class="pl-3 pr-3"><span class="icon-facebook"></span></a>
-        </p>
-      </div>
-      <div class="col-md-6 col-lg-6 col-xl-4 text-center mb-5">
-        <img
-          src="{% static 'images/person_2.jpg' %}"
-          alt="Image"
-          class="img-fluid w-50 rounded-circle mb-4"
-        />
-        <h2 class="text-black font-weight-light mb-4">Claire Smith</h2>
-        <p class="mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab
-          quas facilis obcaecati non ea, est odit repellat distinctio incidunt,
-          quia aliquam eveniet quod deleniti impedit sapiente atque tenetur
-          porro?
-        </p>
-        <p>
-          <a href="#" class="pl-0 pr-3"><span class="icon-twitter"></span></a>
-          <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-          <a href="#" class="pl-3 pr-3"><span class="icon-facebook"></span></a>
-        </p>
-      </div>
-      <div class="col-md-6 col-lg-6 col-xl-4 text-center mb-5">
-        <img
-          src="{% static 'images/person_4.jpg' %}"
-          alt="Image"
-          class="img-fluid w-50 rounded-circle mb-4"
-        />
-        <h2 class="text-black font-weight-light mb-4">John Smith</h2>
-        <p class="mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab
-          quas facilis obcaecati non ea, est odit repellat distinctio incidunt,
-          quia aliquam eveniet quod deleniti impedit sapiente atque tenetur
-          porro?
-        </p>
-        <p>
-          <a href="#" class="pl-0 pr-3"><span class="icon-twitter"></span></a>
-          <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-          <a href="#" class="pl-3 pr-3"><span class="icon-facebook"></span></a>
-        </p>
-      </div>
     </div>
   </div>
 </div>
-
 {% endblock %}
