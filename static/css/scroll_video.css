@@ -30,7 +30,7 @@ body {
 
 section {
   height: 100vh;
-  color: black;
+  /* color: black; */
 }
 
 section h1 {

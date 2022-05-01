@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="{% static 'css/aos.css' %}" />
 
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
     <!-- three js cdn -->
     <script
       async
@@ -51,7 +52,7 @@
       }
     </script>
     <script src="{% static 'js/canvas/index.js' %}" type="module"></script>
-
+    <!-- owned style-->
     <link rel="stylesheet" href="{% static 'css/my-style.css' %}" />
   </head>
   <body>
@@ -64,16 +65,16 @@
         </div>
         <div class="site-mobile-menu-body"></div>
       </div>
-
+      <div id="main_canvas" style="height: 30vh">
+        <canvas id="canvas" width="100%" height="100%"></canvas>
+      </div>
       <header class="site-navbar py-3" role="banner">
         <div class="container-fluid">
           <div class="row align-items-center">
             <div class="col-6 col-xl-2" data-aos="fade-down">
               <h1 class="mb-0">
                 <a href="{% url 'index' %}" class="text-white h2 mb-0">
-                  <div id="main_canvas">
-                    <canvas id="canvas" width="100%" height="100%"></canvas>
-                  </div>
+                  CRAZY KEHN
                 </a>
               </h1>
             </div>
@@ -105,6 +106,7 @@
                   <li><a href="{% url 'service' %}">Services</a></li>
                   <li><a href="{% url 'about' %}">About</a></li>
                   <li><a href="{% url 'contact' %}">Contact</a></li>
+                  <li><a href="{% url 'scroll' %}">Scroll Animation</a></li>
                 </ul>
               </nav>
             </div>

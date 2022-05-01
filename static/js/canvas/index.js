@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import { OrbitControls } from "https://threejs.org/examples/jsm/controls/OrbitControls.js";
-import { GLTFLoader } from "https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js";
+import { GLTFLoader } from "../three.js-master/examples/jsm/loaders/GLTFLoader.js";
 
 window.addEventListener('DOMContentLoaded', init);
 
